@@ -1,0 +1,145 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-16 21:59:06 +0900
+Served asset /rails.png - 200 OK (15ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/hello" for 127.0.0.1 at 2013-04-16 23:16:22 +0900
+Processing by BooklistController#hello as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 238ms (Views: 237.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bye" for 127.0.0.1 at 2013-04-16 23:16:30 +0900
+Processing by BooklistController#bye as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/hello" for 127.0.0.1 at 2013-04-18 20:15:52 +0900
+Processing by BooklistController#hello as HTML
+  Rendered booklist/hello.html.erb within layouts/application (97.4ms)
+Compiled booklist.css  (170ms)  (pid 7264)
+Compiled application.css  (184ms)  (pid 7264)
+Compiled jquery.js  (8ms)  (pid 7264)
+Compiled jquery_ujs.js  (0ms)  (pid 7264)
+Compiled booklist.js  (3329ms)  (pid 7264)
+Compiled application.js  (3664ms)  (pid 7264)
+Completed 200 OK in 4244ms (Views: 4242.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /application.js - 200 OK (81ms)
+
+
+Started GET "/assets/booklist.js?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /booklist.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/booklist.css?body=1" for 127.0.0.1 at 2013-04-18 20:15:56 +0900
+Served asset /booklist.css - 200 OK (7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (120.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (38.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (5.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTitles (20130419060147)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "titles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "sales_date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130419060147')[0m
+  [1m[35m (21.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (172.6ms)[0m  [1mINSERT INTO "titles" ("created_at", "name", "sales_date", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 19 Apr 2013 06:33:03 UTC +00:00], ["name", "宇宙に行った日"], ["sales_date", Mon, 01 Apr 2013], ["updated_at", Fri, 19 Apr 2013 06:33:03 UTC +00:00]]
+  [1m[35m (28.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "titles" ("created_at", "name", "sales_date", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 19 Apr 2013 06:33:03 UTC +00:00], ["name", "絵の意"], ["sales_date", Tue, 12 Mar 2013], ["updated_at", Fri, 19 Apr 2013 06:33:03 UTC +00:00]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/hello" for 127.0.0.1 at 2013-04-19 15:49:54 +0900
+Processing by BooklistController#hello as HTML
+  [1m[36mTitle Load (0.1ms)[0m  [1mSELECT "titles".* FROM "titles" [0m
+  Rendered booklist/hello.html.erb within layouts/application (158.9ms)
+Completed 500 Internal Server Error in 431ms
+
+ActionView::Template::Error (undefined local variable or method `each' for #<#<Class:0xa458774>:0xa45699c>):
+    4: </p>
+    5: <p>
+    6: <% @titles.each do |title| %>
+    7: [タイトル] <%= each.title.name %>, [発売日] <%= each.title.sales_date %><br />
+    8: <% end %>
+    9: </p>
+  app/views/booklist/hello.html.erb:7:in `block in _app_views_booklist_hello_html_erb__203603969__616267648'
+  app/views/booklist/hello.html.erb:6:in `each'
+  app/views/booklist/hello.html.erb:6:in `_app_views_booklist_hello_html_erb__203603969__616267648'
+
+
+  Rendered /home/hice/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/hice/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/hice/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (64.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/hello" for 127.0.0.1 at 2013-04-19 15:52:01 +0900
+Processing by BooklistController#hello as HTML
+  [1m[36mTitle Load (0.3ms)[0m  [1mSELECT "titles".* FROM "titles" [0m
+  Rendered booklist/hello.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 477ms (Views: 196.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-19 15:52:02 +0900
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/booklist.css?body=1" for 127.0.0.1 at 2013-04-19 15:52:02 +0900
+Served asset /booklist.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-19 15:52:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-19 15:52:03 +0900
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/booklist.js?body=1" for 127.0.0.1 at 2013-04-19 15:52:03 +0900
+Served asset /booklist.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-19 15:52:03 +0900
+Served asset /application.js - 304 Not Modified (19ms)

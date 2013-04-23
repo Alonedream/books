@@ -1,0 +1,9 @@
+<h1>Hello</h1>
+<p>
+以下です。
+</p>
+<p>
+<% @titles.each do |title| %>
+[タイトル] <%= each.title.name %>, [発売日] <%= each.title.sales_date %><br />
+<% end %>
+</p>
